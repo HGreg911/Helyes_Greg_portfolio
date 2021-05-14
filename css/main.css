@@ -1,0 +1,206 @@
+/*közös formázás*/
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	display: grid;
+		grid-template-areas: 
+		"fejlec"
+		" kontent "
+		"lablec";
+
+
+	grid-template-rows:minmax(1rem, 1fr) minmax(min-content, 850px) minmax(1rem, 1fr);
+	min-height: 100vh;
+
+	
+	background-color: #91B6D0	
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	line-height: 2rem;
+	font-size: 1.2rem;
+	grid-area: fejlec
+}
+
+main{
+	grid-area: kontent;
+	display: grid;
+	padding-top: 3rem;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-bottom: 3rem;
+}
+
+footer{
+	grid-area: lablec;
+}
+
+p{
+    	margin-block-start: 20px;
+    	margin-block-end: 20px;
+    	margin-inline-start: 20px;
+    	margin-inline-end: 20px;
+}
+
+b{
+	font-size:1.5rem;
+	padding-left: 10px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+/*közös vége*/
+
+
+/*menürész*/
+.menu{
+	background-color: #355E7A;
+	padding: 0px;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding-left: 1rem
+}
+
+.gombok{
+	display: inline-block;
+    width: auto;
+    height: auto;  
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-family: cursive;
+    font-size: 130%;
+    color: white;   
+	border-radius: 1rem;
+	border-color: coral;
+}
+
+.gombok:hover{
+	background-color: #91B6D0;
+	color: white; 
+}
+
+.gombez{
+	display: inline-block;
+    background-color: #91B6D0;
+    width: auto;
+    height: auto;
+ 	border-radius: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+   font-family: cursive;
+    font-size: 130%;
+    color: white;
+}
+
+.titok{
+	display: inline-block;
+    width: auto;
+    height: auto;
+ 	border-radius: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+   font-family: cursive;
+    font-size: 130%;
+    color: #355E7A;
+}
+/*menü vége*/
+
+
+/*főoldal*/
+.oldal{
+	padding-right: 5rem;
+}
+
+.cim{
+	
+	font-size:5rem;
+	color: white;
+	padding-top: 11rem;
+	text-align:center;
+}
+
+.nev{
+	font-family: 'Roboto', serif;
+	padding-top: 10rem;
+	padding-left: 20px;
+	color: white;
+}
+
+/*főoldal vége*/
+
+/*Galéria*/
+.kepek{
+display:inline-block;
+height: 24rem;
+max-width: 100%;
+margin: .5rem;
+padding-top: 3rem;
+background-color:
+margin:3rem;
+}
+
+.kepek img{
+	margin: 0px;
+	padding:7px;
+	background-color: #577E9B;
+	height: 400px;
+}
+
+.kepek .kep_keret{
+display: block;
+margin-top: .5rem;
+text-align: center
+height: 5rem;
+}
+
+.kep_keret img{
+	height: 80%
+	max-width:80%;
+	object-fit: contain;
+}
+
+.kepek .kep_keret :hover{
+	-webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 6px 5px 15px 9px rgba(0,0,0,0.38); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 6px 5px 15px 9px rgba(0,0,0,0.38);
+}
+
+/*Galéria vége*/
+
+
+/*közös szövegrész*/
+.koszones{
+
+	font-size:5rem;
+
+}
+
+.szoveg{
+	padding-left: 10px;
+	color: white;
+	text-align: justify;
+}
+
+.szoveghatter{
+	padding: 8%;
+	background-color: #577E9B;
+	border-radius: 2rem;
+}
+/*közös szövegrész vége*/
+
+
+/*készités*/
+.keszitkep img{
+	max-width: 400px
+}
+/*készités vége*/
